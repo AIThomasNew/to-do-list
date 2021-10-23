@@ -5,7 +5,7 @@ import { Navbar } from './src/Navbar.js';
 export default function App() {
   return (
     <View style={styles.container}>
-      <Navbar />
+      <Navbar title="Todo App!" />
     </View>
   );
 }
