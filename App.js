@@ -2,6 +2,7 @@ import React, { useState } from 'react';
 import { StyleSheet, View, Text } from 'react-native';
 import { AddTodo } from './src/AddTodo.js';
 import { Navbar } from './src/Navbar.js';
+import { Todo } from './src/Todo.js';
 
 export default function App() {
   const [todos, setTodos] = useState([]);
