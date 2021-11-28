@@ -2,15 +2,16 @@ import React from 'react';
 import { Text, View, StyleSheet, TouchableOpacity } from 'react-native';
 
 export const Todo = ({ todo, onRemove }) => {
-  const longPressHandler = () => {
-    onRemove(todo.id);
-  };
+  //* способ удаления через стрелочную функцию
+  // const longPressHandler = () => {
+  //   onRemove(todo.id);
+  // };
 
   return (
     <TouchableOpacity
       activeOpacity={(0, 5)}
       onPress={() => console.log('Pressed', todo.id)} // проверка клика
-      onLongPress={longPressHandler}
+      onLongPress={onRemove.bind(null, todo.id)} //* удаление способом жестким привязыванием контекста
     >
       <View style={styles.todo}>
         <Text>{todo.title}</Text>
