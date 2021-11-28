@@ -20,18 +20,16 @@ export default function App() {
   return (
     <View>
       <Navbar title="Todo App" />
-
       <View style={styles.container}>
         <AddTodo onSubmit={addTodo} />
 
         <View>
-          {todos.map((todo) => {
-            return <Text key={todo.id}> {todo.title} </Text>;
-          })}
+          {todos.map((todo) => (
+            <Todo todo={todo} key={todo.id} />
+          ))}
         </View>
-
+        
       </View>
-      
     </View>
   );
 }

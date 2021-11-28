@@ -2,7 +2,6 @@ import React from 'react';
 import { View, StyleSheet, TextInput, Button } from 'react-native';
 
 export const AddTodo = ({ onSubmit }) => {
-  
   const pressHandler = () => {
     onSubmit('Test todo');
   };
@@ -20,6 +19,7 @@ const styles = StyleSheet.create({
     flexDirection: 'row',
     justifyContent: 'space-between',
     alignItems: 'center',
+    marginBottom: 15,
   },
   input: {
     width: '70%',
