@@ -1,4 +1,4 @@
-# React Native App for iOS & Android 2
+# React Native App for iOS & Android
 
 1. Клонируйте репозиторий 
 2. Установите https://developer.android.com/studio
